@@ -1,0 +1,701 @@
+Date,First Name,Surname,Product,Promotion,Customer ID
+2021-02-03,Bernadette,Martinez,small-ticket,Return custom,36016
+2021-11-17,Sandra,Piccinone,big-ticket,,99493
+2022-05-15,Priscilla,Woodward,big-ticket,Repeat return custom,94767
+2021-04-15,Wanda,Browne,big-ticket,Repeat return custom,72033
+2021-05-07,Jean,Marroquin,big-ticket,,11061
+2021-03-30,Holly,Olin,small-ticket,,56105
+2021-05-30,Oscar,Goslee,small-ticket,,10074
+2021-02-11,Tammy,Sexton,big-ticket,,54667
+2023-02-27,Jerald,Harrell,small-ticket,Repeat return custom,88807
+2022-12-25,James,Longsworth,small-ticket,Repeat return custom,88799
+2022-06-18,Jeffrey,Partridge,small-ticket,,11259
+2021-04-01,James,Austin,big-ticket,,35001
+2022-07-18,Megan,Muldoon,big-ticket,Return custom,25888
+2022-05-04,Mary,Barber,small-ticket,,89755
+2021-09-25,Wilma,Larson,small-ticket,,08156
+2021-05-15,David,Felix,big-ticket,Repeat return custom,64715
+2022-04-07,Oliver,Jessup,small-ticket,Repeat return custom,98833
+2021-05-30,Daniel,Flowers,big-ticket,,63700
+2022-02-08,Michael,Murphy,small-ticket,Repeat return custom,84946
+2022-01-30,Tanisha,Drayton,big-ticket,,97297
+2021-05-29,Ashley,Mitchell,big-ticket,Repeat return custom,13169
+2022-03-26,Thomas,Mills,big-ticket,Return custom,04936
+2022-04-18,Craig,Bernhart,small-ticket,,28327
+2022-10-10,Nickie,Jolissaint,big-ticket,,02766
+2021-09-27,Jess,Kibler,big-ticket,Repeat return custom,08826
+2021-03-31,Alexis,Davis,small-ticket,,96365
+2022-06-01,Warren,Marquez,big-ticket,Return custom,70481
+2022-10-15,Pamela,Johnson,small-ticket,,26148
+2021-12-30,Ann,Armstrong,big-ticket,Repeat return custom,46731
+2022-08-13,Phillip,Wallick,small-ticket,,45788
+2021-12-12,Cynthia,Hildebrant,small-ticket,Repeat return custom,12936
+2022-03-12,Betty,Wells,big-ticket,Repeat return custom,72072
+2022-09-07,Gina,Raya,big-ticket,Repeat return custom,56737
+2021-04-22,Norman,Emig,big-ticket,,96799
+2023-02-18,Issac,Pinkard,small-ticket,Repeat return custom,02688
+2023-01-20,Gary,Hoskins,big-ticket,,29504
+2022-05-12,Sonya,Fuentes,small-ticket,Repeat return custom,87697
+2021-04-02,Arthur,Record,big-ticket,Repeat return custom,96913
+2022-03-12,Cherry,Jewell,small-ticket,Return custom,66932
+2022-12-12,Arthur,Rice,small-ticket,Repeat return custom,34914
+2021-03-25,Stephanie,Coates,big-ticket,Return custom,22244
+2021-06-17,Margaret,Overby,big-ticket,Repeat return custom,02835
+2022-10-31,Lucile,Chun,small-ticket,,11562
+2021-06-13,Betty,Nicholson,big-ticket,Repeat return custom,67946
+2022-12-10,David,Hatfield,big-ticket,,84741
+2021-11-08,Earlean,Harter,small-ticket,Repeat return custom,69639
+2021-06-01,Tony,Velez,small-ticket,Repeat return custom,28657
+2022-11-20,Bobby,Lynch,big-ticket,Repeat return custom,73011
+2023-01-15,Mark,Dunham,big-ticket,Repeat return custom,94743
+2021-12-19,Maryland,Baker,small-ticket,,91090
+2022-04-06,Paul,Hill,small-ticket,,90017
+2022-08-24,Martha,Leo,small-ticket,Repeat return custom,10347
+2021-11-21,Cindy,Dicaprio,small-ticket,,81114
+2021-03-31,Jeffrey,Hunter,small-ticket,Repeat return custom,28606
+2022-08-02,David,Hubbard,small-ticket,Return custom,87378
+2021-04-04,Paul,Neely,small-ticket,Return custom,84334
+2021-04-17,Celia,Anderson,small-ticket,Return custom,94425
+2022-02-06,Kenneth,Tucker,small-ticket,,12372
+2021-02-08,Andrew,Mattox,small-ticket,,56833
+2021-03-16,Suzanne,Santangelo,big-ticket,Repeat return custom,34501
+2022-05-17,Karl,Wenstrom,small-ticket,Repeat return custom,29972
+2021-10-18,Lisa,Red,small-ticket,Repeat return custom,96423
+2022-11-30,Tom,Wood,big-ticket,Repeat return custom,58598
+2021-09-22,Darren,Orr,small-ticket,,31346
+2021-05-28,Alfred,Krupka,small-ticket,Repeat return custom,99743
+2021-06-21,Carie,Imbert,big-ticket,,60565
+2022-08-06,George,Brady,big-ticket,Repeat return custom,79751
+2021-09-11,Young,Carson,small-ticket,Return custom,60318
+2023-01-08,Loretta,Davis,small-ticket,,85885
+2023-02-18,Julian,Johnson,big-ticket,,25545
+2023-02-06,Anne,Mcnew,big-ticket,Repeat return custom,79777
+2021-12-09,Nicole,Cornett,small-ticket,,69503
+2022-09-20,Rodney,Espino,small-ticket,,58234
+2021-02-09,Stephen,Matesic,small-ticket,Repeat return custom,97401
+2022-03-18,Lynda,Canaday,big-ticket,Repeat return custom,74180
+2022-08-20,Danny,Benson,big-ticket,Repeat return custom,48778
+2021-11-22,Jettie,Carpenter,small-ticket,Repeat return custom,74998
+2021-09-09,Doris,Tyre,big-ticket,Repeat return custom,16300
+2021-07-20,Marcia,Conley,big-ticket,,45751
+2022-10-06,Anne,Hewell,big-ticket,Repeat return custom,11398
+2021-03-26,David,Layton,big-ticket,Repeat return custom,78656
+2021-06-26,Diane,Hernandez,big-ticket,,67487
+2021-05-26,Yolando,Young,small-ticket,Repeat return custom,99421
+2022-02-06,Lori,Ferguson,small-ticket,Return custom,56800
+2022-12-24,Benny,Miller,small-ticket,,50005
+2021-09-08,Adrian,Miller,big-ticket,Repeat return custom,50140
+2021-06-26,Melanie,Tyner,big-ticket,,03521
+2022-03-23,Jill,Marquardt,small-ticket,Repeat return custom,01424
+2022-08-28,Susie,Bonds,small-ticket,,80310
+2021-03-08,Antoinette,Pearson,small-ticket,Return custom,79528
+2022-08-31,Pearl,Miller,small-ticket,Repeat return custom,11718
+2023-02-22,Melvin,Sanders,big-ticket,Repeat return custom,03311
+2021-02-11,Charles,Macdonald,big-ticket,,40600
+2021-04-08,Tera,Jones,big-ticket,Repeat return custom,78301
+2022-11-19,Joan,Williams,small-ticket,,73397
+2022-06-05,Leticia,Castro,big-ticket,,78217
+2021-08-14,Robert,Calloway,small-ticket,Repeat return custom,20802
+2022-07-09,William,Giles,big-ticket,,99788
+2022-04-16,Amy,Wear,small-ticket,Repeat return custom,38665
+2022-04-04,Brenda,Villanueva,small-ticket,Repeat return custom,85735
+2022-10-05,William,White,big-ticket,,23467
+2021-02-20,Linda,Jordan,small-ticket,Return custom,72448
+2021-11-02,Cynthia,Lipe,small-ticket,Repeat return custom,60776
+2022-04-23,Bert,Gardner,small-ticket,Return custom,93884
+2022-12-17,Laura,Edwards,small-ticket,Repeat return custom,02939
+2021-06-25,William,Shrout,big-ticket,Repeat return custom,11845
+2021-10-05,Rosanne,Seeger,small-ticket,,84220
+2021-07-07,Sue,Bean,small-ticket,Repeat return custom,75137
+2021-09-24,Ruth,Ball,big-ticket,,48701
+2021-06-24,Martha,Trentman,big-ticket,Repeat return custom,94335
+2022-07-11,Thomas,Bryant,big-ticket,,63021
+2021-09-08,Christopher,Tobey,small-ticket,Repeat return custom,62172
+2022-02-15,David,Turcotte,small-ticket,Repeat return custom,49419
+2021-05-02,Betty,Tenaglia,big-ticket,,67220
+2021-06-24,Joan,Rucker,big-ticket,,60301
+2022-03-15,Henry,Howell,big-ticket,Repeat return custom,79789
+2022-09-16,Carroll,Ramos,big-ticket,,10727
+2023-01-16,Amy,Williams,big-ticket,,45169
+2021-11-01,Joseph,Harp,small-ticket,Repeat return custom,27272
+2021-02-02,Patricia,Shambo,big-ticket,Repeat return custom,40433
+2023-01-13,Wanda,Ruiz,small-ticket,Repeat return custom,97758
+2022-07-30,Michael,Oneill,big-ticket,Return custom,00700
+2023-01-11,Frances,Gutirrez,small-ticket,Repeat return custom,81881
+2022-02-19,Kevin,Boelter,big-ticket,Repeat return custom,34656
+2021-08-16,James,Byrd,small-ticket,Repeat return custom,29463
+2021-07-14,Michelle,Steik,small-ticket,,40693
+2022-01-30,Tamie,Cronin,small-ticket,Repeat return custom,23035
+2021-01-10,Sophia,Johnson,big-ticket,Return custom,63337
+2022-07-29,Steven,Habicht,big-ticket,Repeat return custom,10963
+2023-01-11,Albert,Diaz,small-ticket,Repeat return custom,69553
+2022-05-08,Janice,Hennessey,big-ticket,Repeat return custom,64528
+2022-03-09,Sarah,Christian,big-ticket,Repeat return custom,83043
+2021-04-23,Joanne,Wilkins,big-ticket,,24653
+2023-01-05,Daniel,Ortiz,big-ticket,Return custom,81619
+2021-10-02,Dona,Davis,big-ticket,,63915
+2023-01-20,Jerry,Centeno,small-ticket,,48731
+2021-05-12,Keith,Friend,small-ticket,Repeat return custom,25648
+2021-05-22,Angelina,Ratledge,big-ticket,Repeat return custom,49564
+2023-01-23,Nathan,Dunn,small-ticket,Repeat return custom,28804
+2021-04-22,Dora,Begor,big-ticket,,97839
+2021-06-20,Scot,Williams,small-ticket,Return custom,62903
+2022-12-15,Aurelio,Jones,big-ticket,,56153
+2022-11-29,Allen,Lucas,big-ticket,Return custom,15040
+2021-06-08,Kandy,Pugh,big-ticket,Repeat return custom,05520
+2022-06-16,Andrea,Chancey,small-ticket,,55879
+2022-05-12,Eugene,Harmon,big-ticket,,15070
+2021-10-26,Michelle,Austin,small-ticket,Repeat return custom,07466
+2022-09-11,Kathryn,Miraflores,small-ticket,Repeat return custom,82080
+2023-02-22,Lori,Hancock,small-ticket,Return custom,02125
+2021-07-07,Sara,Farner,big-ticket,Return custom,05523
+2022-08-28,Barry,Meaney,big-ticket,Return custom,21095
+2021-12-02,Jean,Hedges,big-ticket,Repeat return custom,04944
+2022-02-16,Jennifer,Rhodes,small-ticket,,00822
+2021-12-28,William,Cotton,big-ticket,Return custom,33056
+2021-10-28,Joanna,Burton,small-ticket,Repeat return custom,30901
+2021-05-25,Mary,Pena,big-ticket,Return custom,35253
+2021-06-12,Kevin,Porter,big-ticket,,79840
+2022-08-30,Ethel,Claxton,small-ticket,Repeat return custom,96841
+2021-12-02,Jeffrey,Mann,big-ticket,Repeat return custom,99424
+2021-01-07,Rhonda,Houston,small-ticket,Repeat return custom,08639
+2022-02-16,Amanda,Samples,big-ticket,,04174
+2022-12-10,Douglas,Monaghan,small-ticket,Return custom,04167
+2022-09-15,Joseph,Lorge,big-ticket,Repeat return custom,83583
+2021-03-13,Jeffrey,Thigpen,small-ticket,Repeat return custom,73484
+2022-07-21,Vernell,Reasor,small-ticket,,64081
+2021-02-03,Stephen,Briggs,small-ticket,Repeat return custom,53545
+2022-11-08,Ann,Porter,big-ticket,Repeat return custom,70925
+2022-02-28,Timothy,Johnson,small-ticket,,92967
+2023-01-18,Jeanne,Rowe,small-ticket,Repeat return custom,88644
+2021-11-20,Amy,Kesner,big-ticket,Repeat return custom,85326
+2021-04-26,Arthur,Jones,big-ticket,Repeat return custom,07971
+2023-02-04,Linda,Vaughn,small-ticket,Return custom,44508
+2022-12-25,Cheryl,Diaz,big-ticket,Return custom,60790
+2021-12-12,Karen,Munoz,big-ticket,Return custom,03426
+2022-04-08,Glenn,Genther,small-ticket,Repeat return custom,00030
+2022-10-11,Mary,Eakes,big-ticket,Repeat return custom,63374
+2021-10-09,Charlotte,Clark,small-ticket,,40680
+2022-12-27,Rodney,Barber,small-ticket,Return custom,83697
+2021-06-16,Glenn,Miraflores,big-ticket,Repeat return custom,86465
+2021-10-19,Leslie,Garcia,small-ticket,,84451
+2022-09-13,Jose,Parnell,big-ticket,Repeat return custom,88317
+2021-11-30,Christine,Fulton,small-ticket,Return custom,54252
+2022-02-23,Carlos,Geis,small-ticket,Repeat return custom,13597
+2022-08-24,Byron,Merritt,big-ticket,Repeat return custom,11015
+2022-04-12,Clara,Schappert,small-ticket,Repeat return custom,11637
+2021-11-25,Leslie,Alderman,big-ticket,Repeat return custom,90051
+2022-07-31,Willie,Webb,small-ticket,Repeat return custom,65594
+2021-01-16,Dorothy,Nestor,big-ticket,Repeat return custom,77631
+2023-01-24,Edward,Compton,small-ticket,Return custom,97807
+2021-07-08,Nicolas,Buford,big-ticket,Repeat return custom,92217
+2021-05-17,Lindsey,Kroll,small-ticket,,89323
+2022-03-12,John,Wilkinson,big-ticket,Repeat return custom,87913
+2021-02-19,Jo,Brooks,big-ticket,Repeat return custom,01412
+2022-03-24,Sharon,Ricciardi,big-ticket,Repeat return custom,64147
+2021-09-29,Jerome,Garrett,big-ticket,,53328
+2022-08-15,Gregory,Armstrong,small-ticket,Repeat return custom,32311
+2021-04-07,Joseph,Suddoth,small-ticket,Return custom,48807
+2021-10-16,Pete,Johnson,big-ticket,Repeat return custom,76745
+2022-10-31,Margaret,Pape,big-ticket,Repeat return custom,82226
+2021-01-23,Gladys,Carey,big-ticket,Repeat return custom,75918
+2021-11-11,Dorothy,Goldberg,big-ticket,Repeat return custom,96667
+2022-01-01,Thomas,Prewitt,big-ticket,Repeat return custom,58037
+2022-10-12,Jody,Sigman,small-ticket,Repeat return custom,61545
+2022-09-02,Jason,Andre,small-ticket,,49368
+2021-12-06,Faye,Lerman,big-ticket,Repeat return custom,39237
+2022-05-12,Christopher,Dupuis,small-ticket,,12480
+2022-06-28,Mary,Perez,big-ticket,Repeat return custom,90436
+2022-12-01,Ruby,Young,small-ticket,Repeat return custom,28389
+2021-12-21,Denise,Richards,small-ticket,,56028
+2021-11-14,Ronald,Cates,big-ticket,Repeat return custom,04342
+2022-08-15,Debbie,Duke,small-ticket,Repeat return custom,15853
+2022-12-01,Paulina,Mccool,small-ticket,Repeat return custom,63945
+2021-11-09,Barbara,Villar,big-ticket,,76052
+2021-02-19,Martha,Higgins,big-ticket,,89499
+2022-05-13,Lois,Green,small-ticket,Repeat return custom,61376
+2022-03-25,Mildred,Covell,big-ticket,Repeat return custom,19976
+2022-01-28,Karen,Seman,big-ticket,,58497
+2022-01-15,Mary,Belair,big-ticket,Repeat return custom,13115
+2022-04-08,Paul,Love,small-ticket,Repeat return custom,86693
+2022-10-22,Elizabeth,Pool,small-ticket,Return custom,30327
+2021-05-14,Nicholas,Russo,small-ticket,Repeat return custom,20222
+2021-11-01,Delorse,Levesque,small-ticket,Repeat return custom,15653
+2022-05-24,Natalie,Markle,small-ticket,Repeat return custom,88934
+2021-05-29,Daniel,Compton,big-ticket,Repeat return custom,21342
+2021-02-19,Ali,Anderson,big-ticket,,92429
+2021-12-05,Berta,Martin,small-ticket,,67483
+2021-01-12,John,Shafer,small-ticket,Repeat return custom,21147
+2021-10-30,Diana,Gomez,big-ticket,,46147
+2022-12-28,Robert,Grijalva,big-ticket,Repeat return custom,12164
+2022-11-26,Gina,Stringfield,small-ticket,Repeat return custom,66812
+2022-08-28,Ronald,Washington,big-ticket,,89657
+2023-01-14,Jody,Bays,big-ticket,Repeat return custom,89122
+2021-06-08,John,Coker,small-ticket,Repeat return custom,17212
+2021-02-06,Margie,Scalf,big-ticket,Repeat return custom,82150
+2021-05-13,Emily,Johanson,small-ticket,Repeat return custom,07970
+2022-11-17,Tiffany,Tirado,small-ticket,,88831
+2022-08-08,Shannon,Mason,small-ticket,Repeat return custom,07272
+2023-02-11,Roberto,Sachs,small-ticket,Repeat return custom,10759
+2021-02-22,Don,Towe,small-ticket,Repeat return custom,10472
+2021-01-09,Lucinda,Casali,small-ticket,Repeat return custom,79289
+2021-09-22,Betty,Denniston,small-ticket,Repeat return custom,31434
+2022-04-12,Roberto,Jaegers,small-ticket,Repeat return custom,08677
+2021-09-08,Clifton,Soren,big-ticket,Return custom,90474
+2021-12-10,Debbie,Delosh,big-ticket,Repeat return custom,91916
+2022-03-27,Kitty,Mayo,big-ticket,Repeat return custom,38988
+2022-02-27,Sharon,Reese,small-ticket,Repeat return custom,78666
+2022-07-07,Kenneth,Dorio,small-ticket,Repeat return custom,51449
+2022-04-17,Joseph,Aldridge,big-ticket,,34995
+2021-11-24,Mark,Reed,big-ticket,Repeat return custom,19281
+2022-09-29,Rolland,Ramos,small-ticket,Return custom,99823
+2022-08-04,Christina,Kull,big-ticket,Repeat return custom,46472
+2022-06-09,Rose,Heinecke,big-ticket,Repeat return custom,51992
+2023-02-08,Nora,Olney,small-ticket,,76617
+2021-12-03,Kali,Hering,big-ticket,Repeat return custom,90874
+2021-11-28,Alice,Smith,small-ticket,Repeat return custom,81906
+2022-10-16,Richard,Hoppe,small-ticket,,20973
+2022-03-18,Carol,Greene,small-ticket,Return custom,47495
+2021-09-05,Charlene,Arnold,big-ticket,Repeat return custom,12207
+2021-10-30,Consuelo,Aaron,small-ticket,Repeat return custom,53826
+2022-09-02,Carla,Diaz,big-ticket,Return custom,87819
+2021-12-06,Felicia,Beebe,big-ticket,Repeat return custom,88669
+2021-05-11,Tyler,Grimm,small-ticket,Repeat return custom,83480
+2022-10-10,Louise,Roberts,big-ticket,,44656
+2021-01-10,Edna,Robbinson,big-ticket,Repeat return custom,19852
+2021-07-28,Mary,Gurley,big-ticket,Repeat return custom,56011
+2021-12-23,Robert,Wilson,big-ticket,,36607
+2021-03-29,Kelli,Lemon,big-ticket,Repeat return custom,87037
+2021-02-22,Catherine,Chandler,small-ticket,Repeat return custom,60830
+2021-02-24,Rose,Mathis,small-ticket,,59220
+2021-08-24,Hollis,Register,big-ticket,Repeat return custom,05434
+2021-01-09,Gregory,Brown,small-ticket,Return custom,92341
+2022-08-31,Steven,Howard,small-ticket,,47794
+2022-06-24,Grace,Tylwalk,big-ticket,Repeat return custom,83154
+2021-10-01,Ray,Sapp,small-ticket,,84461
+2022-03-29,Jesus,Jones,big-ticket,,63443
+2021-11-01,Thelma,Leach,small-ticket,Return custom,91039
+2022-05-25,Carol,Gaines,small-ticket,Return custom,18560
+2022-09-18,Eddie,Burton,small-ticket,,98319
+2022-03-02,Buddy,Day,small-ticket,Repeat return custom,80973
+2021-08-12,Sean,Jimenez,big-ticket,,59557
+2022-10-25,Floyd,Henderson,small-ticket,,78760
+2022-09-17,Simona,Estrada,big-ticket,,72013
+2021-05-22,Tara,Pinto,small-ticket,,31849
+2022-01-27,Elias,Kipling,small-ticket,Return custom,43116
+2022-04-29,Carl,Long,small-ticket,Repeat return custom,38201
+2021-08-29,Brian,Guillaume,small-ticket,Repeat return custom,10726
+2021-07-22,Elwood,Hodgkiss,big-ticket,Repeat return custom,94983
+2022-05-15,Giovanni,Perry,big-ticket,Repeat return custom,82750
+2022-11-11,Glenn,Hull,big-ticket,Repeat return custom,75876
+2022-04-24,Kristina,Santiago,big-ticket,,32249
+2022-08-23,Constance,Orourke,small-ticket,Repeat return custom,96739
+2022-06-21,Shane,Taylor,big-ticket,Repeat return custom,26856
+2022-05-13,Richard,Warren,small-ticket,Repeat return custom,79205
+2021-08-28,Hector,Perry,small-ticket,Repeat return custom,90192
+2021-11-12,Jon,Metz,big-ticket,Repeat return custom,15639
+2021-09-17,Dennis,Gonsalves,big-ticket,,73175
+2021-04-27,Georgia,Brantley,big-ticket,Repeat return custom,46611
+2021-01-09,Thomas,Slaughter,small-ticket,Repeat return custom,08420
+2021-07-06,Theodore,Chavez,big-ticket,,89894
+2021-02-05,Susan,Chagnon,small-ticket,Repeat return custom,56258
+2022-10-23,Carl,Wright,big-ticket,Repeat return custom,53945
+2021-10-26,Steven,Ramer,big-ticket,Repeat return custom,06978
+2021-09-18,Nelson,Watts,small-ticket,Repeat return custom,37504
+2021-10-24,Pedro,Stout,big-ticket,Repeat return custom,23770
+2022-03-07,Howard,Wilson,small-ticket,,50281
+2022-06-21,Cindy,Beach,big-ticket,,65534
+2021-11-21,Jose,Naylor,small-ticket,Repeat return custom,44232
+2022-07-04,Joseph,Rogan,big-ticket,Repeat return custom,95545
+2023-01-10,Rick,Gatling,small-ticket,Repeat return custom,18181
+2022-03-02,Charles,Andaya,big-ticket,,07556
+2021-10-30,Tommy,Estrada,big-ticket,Repeat return custom,62048
+2022-05-18,James,Campos,big-ticket,Return custom,45305
+2022-03-09,Darrell,Sylvester,small-ticket,,00697
+2021-05-20,Henry,Johnson,big-ticket,,51723
+2022-06-15,Samuel,Reinking,big-ticket,Return custom,82367
+2023-01-22,Pearl,Rios,small-ticket,,86614
+2022-09-10,Bobby,Shea,big-ticket,Repeat return custom,00992
+2022-06-06,Terence,Williams,small-ticket,Return custom,02553
+2022-09-08,Jim,Montero,big-ticket,,67621
+2021-08-04,Burton,Mullen,big-ticket,Repeat return custom,36651
+2021-09-25,Gregory,Boyle,small-ticket,,32368
+2021-09-05,Casey,Nash,small-ticket,Repeat return custom,84835
+2021-10-03,Louise,Ramirez,big-ticket,,28362
+2021-09-02,Shane,Fetterhoff,small-ticket,Repeat return custom,20808
+2021-02-27,Jorge,Vinson,small-ticket,Return custom,40892
+2021-05-30,Dorothy,Stephens,big-ticket,Repeat return custom,77262
+2021-07-20,Marilyn,Keyes,big-ticket,Repeat return custom,48786
+2021-12-03,Cristina,Jones,big-ticket,Return custom,16000
+2021-07-11,Ronald,Siggers,small-ticket,,51983
+2022-08-22,Kathy,Cowell,big-ticket,Repeat return custom,68138
+2021-05-26,Gregory,Merritt,big-ticket,,15182
+2021-06-06,Christine,Bryant,big-ticket,Repeat return custom,29631
+2022-09-02,Ronald,Szekely,small-ticket,Repeat return custom,89869
+2022-09-09,Jacqueline,Mccarty,big-ticket,,10933
+2021-10-03,Bettye,Green,small-ticket,Repeat return custom,52171
+2021-01-16,Veronica,Jansen,big-ticket,,03589
+2022-01-04,Jack,Meli,big-ticket,Repeat return custom,86573
+2021-10-03,Barbara,Brown,small-ticket,,13802
+2021-07-26,Judith,Shulte,small-ticket,Repeat return custom,01561
+2022-02-21,Charles,Telep,small-ticket,Repeat return custom,72145
+2022-04-16,Sara,Odell,big-ticket,Repeat return custom,94456
+2022-06-17,Anthony,Rankin,small-ticket,Repeat return custom,59676
+2021-08-19,John,Howard,big-ticket,Repeat return custom,92377
+2021-03-29,Marvin,Lohr,small-ticket,Return custom,83824
+2022-08-04,Marvin,Liebl,big-ticket,Repeat return custom,18225
+2021-06-16,Paul,Jones,small-ticket,Repeat return custom,35933
+2022-01-10,Roger,Curtis,big-ticket,Return custom,14012
+2022-11-03,Wayne,Greene,small-ticket,Repeat return custom,08944
+2023-02-24,Jessica,Colucci,big-ticket,Repeat return custom,41642
+2021-02-15,Melanie,Rodriguez,big-ticket,Return custom,67851
+2021-05-06,Alan,Schmidt,small-ticket,Repeat return custom,15883
+2022-12-22,Eugene,Roberts,small-ticket,,10554
+2021-03-30,Stanley,Burr,big-ticket,Repeat return custom,40830
+2022-10-19,Shirley,Kilmer,small-ticket,,69639
+2022-12-19,Emily,David,small-ticket,Repeat return custom,57896
+2021-07-06,Jerry,Blackaby,big-ticket,Repeat return custom,13518
+2021-09-15,Virginia,Kaeo,big-ticket,Repeat return custom,40293
+2021-12-20,John,Geesey,small-ticket,,68841
+2022-05-26,Mary,Belcher,small-ticket,,73930
+2021-12-01,Jared,Toney,small-ticket,Repeat return custom,20382
+2022-08-23,Florence,Santiago,big-ticket,Repeat return custom,89583
+2022-03-18,Charles,Gerstner,big-ticket,,43574
+2021-10-30,Iola,Johnson,small-ticket,,96199
+2021-01-12,Bert,Johnson,small-ticket,,56490
+2021-02-03,Rafael,Reep,small-ticket,Repeat return custom,51855
+2021-03-16,Joan,Fagan,small-ticket,Repeat return custom,99886
+2021-11-21,Andres,Furches,small-ticket,Repeat return custom,81441
+2021-06-05,Kirk,Frazier,small-ticket,Repeat return custom,42133
+2022-10-13,Laura,Mcdaniel,small-ticket,,89473
+2022-06-28,Gloria,Reed,small-ticket,Repeat return custom,75229
+2021-06-03,Jane,Murphy,big-ticket,Repeat return custom,77016
+2022-02-17,Michele,White,small-ticket,Repeat return custom,69264
+2023-01-14,Gary,Dangelo,small-ticket,,03176
+2023-02-21,Leo,Shani,big-ticket,,11013
+2021-10-15,Frank,Epperson,small-ticket,Repeat return custom,15395
+2021-06-25,Desiree,Wallace,small-ticket,Repeat return custom,96858
+2021-10-13,Cleo,Bridgeman,small-ticket,,28086
+2022-12-15,Manuel,Albert,small-ticket,Return custom,96368
+2022-02-12,Phyllis,Benson,small-ticket,Repeat return custom,66540
+2021-07-19,Pearl,Biagioni,small-ticket,Repeat return custom,50135
+2021-05-08,Dusty,Chin,small-ticket,Repeat return custom,20263
+2021-11-20,Anne,Pecci,small-ticket,,42275
+2022-04-18,Matthew,Sessions,small-ticket,,97270
+2022-02-20,Morgan,Kaplan,small-ticket,Repeat return custom,40931
+2022-04-13,Sherry,Rivera,big-ticket,,22689
+2021-10-17,Lashawn,Cotman,small-ticket,Repeat return custom,65416
+2022-01-26,Edna,Young,small-ticket,Repeat return custom,93649
+2022-01-24,Macy,Stefani,small-ticket,,99773
+2022-05-17,Donald,Torrey,small-ticket,Repeat return custom,34502
+2021-11-22,Grace,Then,small-ticket,Repeat return custom,97161
+2021-12-16,Dora,Barrett,big-ticket,,25215
+2023-02-01,Rosa,Mays,big-ticket,,67792
+2021-04-05,Nicole,Cox,small-ticket,Repeat return custom,44279
+2021-06-09,Sherry,Blackburn,small-ticket,Repeat return custom,88158
+2021-03-31,Mitchell,Johnson,small-ticket,Repeat return custom,99047
+2022-12-12,Nicolas,Wilson,big-ticket,,92641
+2022-05-29,Deborah,Gade,small-ticket,,28524
+2022-12-22,Catherine,Creswell,small-ticket,Repeat return custom,63453
+2021-05-19,Michele,Dillard,small-ticket,,70107
+2022-11-25,Cameron,Hunt,big-ticket,Repeat return custom,97056
+2021-02-19,Rosenda,Moreno,big-ticket,,90603
+2021-09-07,Robert,Hernandez,big-ticket,,76340
+2022-11-15,Jon,Collins,big-ticket,Repeat return custom,59719
+2022-05-05,Teresa,Pugh,small-ticket,Return custom,28144
+2021-02-20,Katherine,Lane,small-ticket,Repeat return custom,47928
+2022-10-09,Lilly,Jackson,small-ticket,Repeat return custom,44404
+2021-01-06,Robert,Jennings,big-ticket,Repeat return custom,91182
+2021-12-31,Ramona,Marinelli,big-ticket,Repeat return custom,76693
+2022-04-04,Ronald,Walton,big-ticket,Repeat return custom,69740
+2022-08-02,Willie,Schley,big-ticket,Repeat return custom,23745
+2021-07-27,Galen,Reddick,big-ticket,Repeat return custom,07660
+2023-02-08,Alton,Lake,big-ticket,Repeat return custom,25715
+2022-10-17,Jamie,Goodman,big-ticket,Repeat return custom,38125
+2021-02-15,Donald,Alexander,big-ticket,,44860
+2022-03-12,Kathy,Bowar,big-ticket,Repeat return custom,31278
+2023-01-03,Aaron,Sanchez,big-ticket,Repeat return custom,11879
+2023-02-13,Crystal,Hopper,big-ticket,,49005
+2021-12-26,Ross,Dyess,small-ticket,,13730
+2022-03-13,Michelle,Miller,big-ticket,Repeat return custom,31293
+2022-07-09,Vivian,Martin,small-ticket,Repeat return custom,55017
+2021-12-10,David,Snow,small-ticket,Repeat return custom,92600
+2022-06-30,Ethel,Welton,small-ticket,,38945
+2022-10-07,Della,Bell,big-ticket,,11587
+2022-07-31,Clara,Cannon,big-ticket,Repeat return custom,96292
+2021-07-13,Ellis,Presley,small-ticket,Repeat return custom,54532
+2021-01-01,Douglas,Yannone,big-ticket,Repeat return custom,88166
+2023-01-23,Kimberly,Taylor,small-ticket,,20025
+2021-04-08,David,Berry,small-ticket,Repeat return custom,95019
+2021-08-13,Sheryl,Munoz,big-ticket,,43500
+2022-05-16,Arnulfo,Durant,big-ticket,Return custom,70129
+2022-06-29,Archie,Judy,big-ticket,,03157
+2022-04-24,Linda,Niedzwiecki,small-ticket,,41642
+2021-12-21,Maria,Wigfall,small-ticket,Repeat return custom,89091
+2021-10-30,Patricia,Jones,big-ticket,Repeat return custom,92607
+2021-03-23,Thresa,Carr,big-ticket,Repeat return custom,25310
+2023-01-19,Ashley,Mihelich,big-ticket,,49415
+2021-07-06,Angel,Williams,big-ticket,Repeat return custom,00739
+2022-03-10,Terry,Silvis,small-ticket,Repeat return custom,07747
+2022-02-17,Bryce,David,small-ticket,,06037
+2021-12-26,Nicole,Cornell,big-ticket,,24542
+2022-08-07,James,Bartz,small-ticket,Repeat return custom,25117
+2021-06-17,Emily,Alvear,big-ticket,Return custom,41868
+2022-11-07,Kathy,Futrell,big-ticket,Return custom,06123
+2022-08-04,Samantha,Natal,big-ticket,,13634
+2021-01-29,Richard,Nielsen,big-ticket,,43097
+2022-02-13,Mary,Comfort,small-ticket,Repeat return custom,68001
+2021-07-20,Jose,Bowen,big-ticket,Repeat return custom,23232
+2022-05-18,Harold,Hollifield,small-ticket,Repeat return custom,36028
+2022-04-04,Richard,Hughes,small-ticket,Repeat return custom,81354
+2022-12-09,Patricia,Dandrea,big-ticket,Repeat return custom,33974
+2021-07-08,Beth,Baty,big-ticket,Repeat return custom,69176
+2021-05-02,Patricia,Wilkinson,big-ticket,Repeat return custom,67543
+2021-01-09,Roxanne,Caudill,big-ticket,Repeat return custom,06312
+2021-07-14,Deborah,Selman,big-ticket,Return custom,27696
+2022-07-07,Peter,Riehle,small-ticket,Repeat return custom,47610
+2021-06-29,Aaron,Cox,small-ticket,,65999
+2022-12-15,Marie,Finley,big-ticket,,84137
+2021-08-16,Jason,Esquivel,big-ticket,Return custom,27934
+2023-02-13,Norman,Markham,big-ticket,,32165
+2022-09-27,Gloria,Anderson,small-ticket,Return custom,61975
+2021-07-09,Jacques,Griggs,small-ticket,,64930
+2021-12-21,Steven,Sims,small-ticket,Repeat return custom,07998
+2021-10-04,Ethel,Anderson,small-ticket,Repeat return custom,50071
+2021-03-05,Roy,Ford,small-ticket,Repeat return custom,68931
+2021-08-27,Stephen,Gustin,small-ticket,,98372
+2022-09-26,Donald,Mattson,small-ticket,,75728
+2021-03-16,William,Sutton,big-ticket,,52905
+2022-04-15,Tera,Manning,big-ticket,,50119
+2021-01-27,Sallie,Diloreto,small-ticket,Repeat return custom,80854
+2022-03-18,Kenneth,Mcshane,small-ticket,,07169
+2022-07-12,Richard,Powers,small-ticket,Return custom,13541
+2022-04-07,Mathew,Aikens,big-ticket,Repeat return custom,80502
+2023-02-22,Terry,Williams,big-ticket,Return custom,48596
+2022-10-08,Vickie,Geary,small-ticket,Repeat return custom,60902
+2022-12-04,Randy,Rivera,small-ticket,Repeat return custom,57316
+2022-04-13,Sharon,Seely,big-ticket,Repeat return custom,49482
+2021-01-25,Dallas,Gonzalez,big-ticket,Repeat return custom,09848
+2021-11-26,Marie,Zolocsik,small-ticket,Repeat return custom,90251
+2021-09-05,Ricky,Cooper,big-ticket,Repeat return custom,23686
+2023-02-25,Jeffrey,Clemans,big-ticket,,74237
+2022-02-23,Denver,Lee,small-ticket,Return custom,48568
+2021-04-26,Marion,Harrison,small-ticket,,66350
+2021-09-24,Julie,Auer,small-ticket,,65707
+2022-10-17,James,Herrera,big-ticket,Repeat return custom,11822
+2021-10-11,Raquel,Luechtefeld,big-ticket,Return custom,49142
+2022-06-19,Sara,Pell,small-ticket,Repeat return custom,76320
+2023-02-04,Lisa,Hamiel,big-ticket,Return custom,60972
+2022-03-14,Felipa,Jacobs,small-ticket,Return custom,60396
+2021-02-07,Margarito,Burgess,small-ticket,,38810
+2023-02-17,Dorothy,Cummings,big-ticket,,64669
+2021-07-30,Nathaniel,Garcia,small-ticket,Repeat return custom,43399
+2021-09-27,Connie,Jacobs,big-ticket,Repeat return custom,70399
+2021-08-26,Betty,Burden,big-ticket,Repeat return custom,28495
+2021-10-19,Noemi,Fansler,small-ticket,Repeat return custom,34199
+2022-02-15,Judith,Simpson,small-ticket,Repeat return custom,00838
+2022-11-15,Ofelia,Ullmann,big-ticket,,33479
+2021-05-14,Nancy,Jares,small-ticket,Repeat return custom,42989
+2021-12-11,Linda,Gray,big-ticket,Return custom,78185
+2021-03-13,Timothy,Todd,big-ticket,Repeat return custom,71528
+2021-01-27,Daniel,Rogers,big-ticket,Repeat return custom,26478
+2022-12-30,Connie,Barry,big-ticket,Repeat return custom,83150
+2022-04-08,Ernest,Tate,small-ticket,Repeat return custom,18531
+2023-01-01,Brian,Ingraham,small-ticket,Repeat return custom,36195
+2021-07-20,Mary,Kehew,big-ticket,Repeat return custom,88140
+2022-03-25,Jonathan,Booher,big-ticket,Repeat return custom,90329
+2021-08-16,John,Jenkins,big-ticket,Return custom,98956
+2021-05-18,Dale,Harris,big-ticket,Repeat return custom,46848
+2023-01-18,Milford,Coleman,small-ticket,Repeat return custom,01080
+2022-09-09,Margaret,Prentice,big-ticket,Repeat return custom,46606
+2021-06-11,Clarence,Johnson,big-ticket,Repeat return custom,99756
+2022-05-17,Bettye,Leverette,big-ticket,Return custom,88768
+2023-02-12,Rosa,Freeman,big-ticket,Repeat return custom,79788
+2021-10-22,Ophelia,Halley,small-ticket,Repeat return custom,44156
+2023-01-12,Donald,Corella,small-ticket,Return custom,51488
+2022-02-08,Lori,Dinkins,big-ticket,Repeat return custom,72171
+2021-08-12,Erin,Watson,small-ticket,Repeat return custom,67437
+2022-03-11,Julius,Barkett,big-ticket,Repeat return custom,01330
+2023-01-09,Daniel,Hurley,big-ticket,Repeat return custom,18813
+2021-03-08,Alex,Berman,big-ticket,Repeat return custom,45718
+2022-07-07,Debra,Lee,small-ticket,Repeat return custom,37822
+2021-06-02,Larry,Brazee,small-ticket,Repeat return custom,42480
+2023-02-22,Robert,Moran,big-ticket,Repeat return custom,47470
+2022-08-04,Michael,Paul,small-ticket,Repeat return custom,42341
+2022-06-21,Bryan,Hughes,big-ticket,Repeat return custom,91258
+2021-10-21,Scott,Green,big-ticket,Repeat return custom,84932
+2022-05-03,Robert,Naone,small-ticket,Repeat return custom,01075
+2022-11-29,William,Hess,big-ticket,Repeat return custom,55797
+2021-12-16,Rebekah,Mileski,big-ticket,,83469
+2021-01-14,Madeleine,Rusk,small-ticket,,08853
+2021-09-13,Michelle,Lopez,big-ticket,,63357
+2022-03-04,Sunshine,Clay,small-ticket,Repeat return custom,31610
+2021-02-11,Adolfo,Bean,big-ticket,Repeat return custom,46132
+2022-04-13,Richard,Taylor,big-ticket,Return custom,31035
+2021-12-15,Donna,Mccarty,small-ticket,Return custom,32868
+2021-01-12,John,Strong,big-ticket,Repeat return custom,86086
+2022-03-08,James,Hier,big-ticket,,27161
+2021-04-08,Patrick,Shaw,big-ticket,,51166
+2021-03-10,Armando,Lo,small-ticket,Repeat return custom,91066
+2022-09-18,David,Wallace,big-ticket,Repeat return custom,17627
+2021-10-20,Tony,Hernandez,small-ticket,Repeat return custom,58939
+2021-09-23,Gregory,Gregory,small-ticket,Repeat return custom,91388
+2023-01-21,Pamela,Shaw,big-ticket,,57238
+2021-09-27,Willie,Harper,small-ticket,,65265
+2021-06-08,Eva,Million,big-ticket,Repeat return custom,59250
+2023-02-14,Michelle,Rodriguez,big-ticket,,93206
+2022-09-30,Babette,Gerald,small-ticket,Repeat return custom,33955
+2021-05-03,Donna,Patton,big-ticket,Repeat return custom,97597
+2021-10-02,Merlin,Kelly,small-ticket,Repeat return custom,99597
+2021-12-05,Anthony,Sutton,big-ticket,Return custom,53031
+2021-08-20,Mary,Bouchard,big-ticket,Repeat return custom,32459
+2022-04-24,Drew,Geer,small-ticket,Repeat return custom,28394
+2021-05-09,Mary,Barr,big-ticket,Repeat return custom,79995
+2021-08-22,Michael,Lendon,big-ticket,Repeat return custom,52789
+2022-07-01,Guy,Goodall,big-ticket,Return custom,79622
+2022-01-02,Linda,Mullenax,small-ticket,Return custom,40616
+2021-10-27,Wayne,Davis,big-ticket,Repeat return custom,16611
+2022-06-19,David,Hastings,big-ticket,,73171
+2022-09-23,Gabriel,Green,big-ticket,,94793
+2021-02-15,Brad,Humphrey,small-ticket,Return custom,63942
+2021-01-18,Susie,Baker,big-ticket,Repeat return custom,41350
+2021-06-23,Gerald,Daniels,small-ticket,Return custom,91547
+2022-11-26,Vernon,Gomez,big-ticket,Repeat return custom,53816
+2022-05-24,Dorothy,Cooke,big-ticket,Repeat return custom,86246
+2021-12-10,Frank,Brown,small-ticket,Return custom,42608
+2022-12-30,Rose,Kuo,big-ticket,Repeat return custom,62379
+2021-05-30,Justin,Murchison,big-ticket,Repeat return custom,87256
+2021-02-15,Margaret,Stovall,small-ticket,,44329
+2022-11-29,Brent,Sorensen,small-ticket,Repeat return custom,51872
+2021-08-06,Susan,Ham,big-ticket,Repeat return custom,94483
+2021-05-08,Justin,Windus,big-ticket,Repeat return custom,76609
+2021-02-10,Kathleen,Money,big-ticket,,37674
+2021-02-27,Jill,Evans,small-ticket,Repeat return custom,79768
+2022-10-30,Mike,Lewis,big-ticket,,39300
+2021-01-11,Charles,Davis,big-ticket,Repeat return custom,10174
+2021-01-31,Jessica,Plumer,big-ticket,Return custom,12936
+2021-10-14,Kathy,Harper,big-ticket,Repeat return custom,38628
+2022-05-08,Ryan,Aderholt,big-ticket,Return custom,66476
+2022-01-20,Joseph,Mccree,small-ticket,,36610
+2022-01-15,Erin,Brady,big-ticket,Repeat return custom,29326
+2021-08-06,Avis,Looney,small-ticket,Return custom,71745
+2022-09-22,Cheryl,Greenman,small-ticket,Repeat return custom,71593
+2021-03-14,Carolyn,Garcia,big-ticket,Repeat return custom,07594
+2022-01-01,Betty,Sutton,big-ticket,Return custom,12036
+2022-08-06,Melba,Pitts,small-ticket,,11015
+2022-08-03,Derek,Nairn,small-ticket,Repeat return custom,78008
+2021-05-07,Angela,Kanne,big-ticket,Repeat return custom,67287
+2023-02-15,Marilyn,Riffe,small-ticket,,29966
+2021-05-21,Leslie,Brooks,big-ticket,,92102
+2022-09-21,Susan,Martinez,big-ticket,,02779
+2022-06-13,Veronica,Kerns,big-ticket,Return custom,66560
+2021-11-23,Abraham,Ladner,small-ticket,Repeat return custom,47017
+2022-04-02,Wesley,Mcmahan,big-ticket,Repeat return custom,38470
+2021-10-20,Joan,Neubauer,small-ticket,Repeat return custom,16651
+2022-09-09,Jerry,Pittenger,small-ticket,,09617
+2022-05-25,Michele,Bergsma,small-ticket,,19518
+2022-06-07,Lela,Armstrong,small-ticket,,50358
+2021-05-01,Norbert,Martinez,big-ticket,Repeat return custom,49149
+2021-06-06,Tina,Edwards,small-ticket,Repeat return custom,38314
+2021-11-07,Darryl,Carpenter,big-ticket,Repeat return custom,24327
+2022-08-08,Joan,Brown,big-ticket,Repeat return custom,65370
+2021-03-15,Juanita,Valdovinos,small-ticket,Return custom,20594
+2022-08-19,Dane,Sanders,small-ticket,Repeat return custom,47299
+2022-04-18,Lois,Smith,small-ticket,Return custom,94533
+2021-08-06,James,Guajardo,small-ticket,Repeat return custom,50101
+2022-06-10,Michael,Leonard,big-ticket,Repeat return custom,43009
+2023-02-06,Ida,Goode,big-ticket,,53854
+2022-12-05,William,Brooks,big-ticket,,85963
+2022-02-16,Bonnie,Sutherland,small-ticket,Repeat return custom,24224
+2021-02-18,Lee,Sanders,big-ticket,Repeat return custom,61849
+2023-01-07,Gail,Lewis,big-ticket,Repeat return custom,41312
+2021-10-25,Jacqueline,Clyde,big-ticket,Repeat return custom,83448
+2022-08-02,William,Norment,small-ticket,Return custom,38250
+2022-03-02,Anthony,Estrada,big-ticket,Repeat return custom,33013
+2022-01-26,Amy,Hunt,big-ticket,Return custom,60396
+2021-11-30,Carol,Patterson,big-ticket,Repeat return custom,05680
+2021-07-22,Doris,Thompson,small-ticket,Repeat return custom,57444
+2021-03-13,Terry,Newsome,small-ticket,Repeat return custom,18646
+2021-03-28,Madonna,Allen,big-ticket,Repeat return custom,20859
+2021-02-10,Jo,Starr,small-ticket,,48757
+2021-08-13,Christina,Johnson,big-ticket,Repeat return custom,24457
+2021-01-19,Danny,Huffman,small-ticket,,07396
+2021-10-07,Wanda,Jeter,small-ticket,,21875
+2022-05-22,Alice,Plitt,small-ticket,Repeat return custom,00666
+2022-07-17,Larry,Mcmillan,small-ticket,Return custom,94366
+2022-05-19,Gary,Raggs,small-ticket,Repeat return custom,42769
+2021-08-18,Joseph,Simmons,big-ticket,,19784
+2021-06-15,Michael,Rodriguez,big-ticket,Repeat return custom,82482
+2023-01-15,Allan,Mcchristian,small-ticket,Repeat return custom,04877
+2022-06-03,Linsey,Zambrano,big-ticket,Repeat return custom,41066
+2022-08-28,Bennie,Delong,small-ticket,Repeat return custom,43793
+2022-04-19,Kelli,Daniels,small-ticket,Repeat return custom,37394
+2022-10-07,Tyler,Galloway,big-ticket,,14276
+2021-01-29,Holly,Heenan,small-ticket,Repeat return custom,97179
+2021-09-16,James,Frost,big-ticket,,18879
+2021-07-17,Katrina,Echeverria,big-ticket,Repeat return custom,39789
+2021-08-08,Thanh,Summy,small-ticket,Repeat return custom,82895
+2021-01-22,Barbara,Choi,big-ticket,Return custom,08577
+2021-08-24,Thomas,Tucker,big-ticket,Return custom,47076
+2022-10-20,Andre,Fennell,small-ticket,,08721
+2023-01-02,Wilbert,Driver,big-ticket,Repeat return custom,11033
+2022-08-16,Kimberly,Sanchez,small-ticket,Return custom,10033
+2021-03-30,Gene,Russell,big-ticket,,83206
+2021-03-10,Nellie,Gregson,big-ticket,,78662
+2022-04-10,James,Banuelos,small-ticket,Repeat return custom,58060
+2021-11-04,Kimberly,Strickland,big-ticket,Repeat return custom,08140
+2021-05-03,Victor,Fujita,small-ticket,,97259
+2021-05-31,Brandon,Harris,small-ticket,Repeat return custom,93774
+2021-12-25,Susan,Parr,small-ticket,Repeat return custom,49536
+2022-09-05,Brooke,Craig,big-ticket,Return custom,15245
+2022-01-13,Marcela,Harris,big-ticket,Repeat return custom,76861
+2023-01-24,Stacy,Womack,small-ticket,Repeat return custom,87981
+2022-06-04,Robert,Brewer,big-ticket,Repeat return custom,14364
+2023-02-25,Beatrice,Guzman,small-ticket,Return custom,85087
+2021-06-14,Yvonne,Mcintosh,small-ticket,Repeat return custom,96167
+2021-06-09,John,Bryan,small-ticket,Repeat return custom,67106
+2022-11-06,Charles,Hairston,big-ticket,,61616
+2021-11-20,Joshua,Martinez,big-ticket,Return custom,65887
+2021-05-13,Van,Barbe,big-ticket,,36934
+2021-01-12,William,Lorenzen,big-ticket,Repeat return custom,59519
+2022-04-13,Sherry,Payne,small-ticket,Repeat return custom,92495
+2022-11-12,Emily,Paul,big-ticket,Repeat return custom,91060
+2021-04-02,Vivian,Williams,big-ticket,Repeat return custom,96740
+2022-04-24,Bonnie,Couch,small-ticket,,98920
+2021-11-18,Ann,Leake,big-ticket,Return custom,45786
+2022-11-08,Eric,Wilson,small-ticket,Repeat return custom,19837
+2022-09-14,Sherry,Laubach,big-ticket,Repeat return custom,18729
+2022-05-21,Isabella,Whedbee,big-ticket,,48448
+2021-05-22,Robert,Kiefer,small-ticket,,56961
+2021-05-25,Jesse,Conrad,small-ticket,Repeat return custom,50591
+2022-09-29,Shirley,Mills,small-ticket,Repeat return custom,99878
+2021-11-16,Opal,Epps,small-ticket,Repeat return custom,98594
+2021-03-17,Jacqueline,Bynum,small-ticket,Repeat return custom,46741
+2022-05-17,Nadine,Zacharias,small-ticket,Repeat return custom,56991
+2021-01-01,James,Moses,small-ticket,Repeat return custom,94198
+2022-05-27,Helen,Hunter,big-ticket,Repeat return custom,04815
+2022-12-19,Neva,Greenstreet,small-ticket,Repeat return custom,31577
+2021-09-28,Gordon,Smith,big-ticket,,94877
+2021-12-29,Sandy,Pickett,small-ticket,Repeat return custom,40845
+2022-06-19,Anthony,Billiot,big-ticket,,74709
+2021-11-15,Agnes,Mandato,big-ticket,,83126
+2022-05-01,Christy,Smith,big-ticket,,95180
+2021-10-22,Phyllis,Scoggins,small-ticket,Repeat return custom,40021
+2022-09-02,Ruthann,Miller,small-ticket,Repeat return custom,71616
+2021-02-23,Joseph,Brannon,small-ticket,Repeat return custom,03995
+2022-03-20,Elaine,Heath,big-ticket,,15837
+2022-10-21,Charles,Ruiz,small-ticket,Repeat return custom,07417
+2022-05-15,Lynda,Lima,big-ticket,Return custom,57081
+2021-05-04,Jerome,Gales,small-ticket,,94838
+2022-11-28,Cindy,Magee,small-ticket,,80324
+2021-02-15,David,Balkus,big-ticket,,87908
+2022-12-20,Robert,Cole,big-ticket,Return custom,13568
+2022-10-07,Blanche,Booth,big-ticket,Repeat return custom,34481
+2023-01-22,Tosha,Rogers,small-ticket,Repeat return custom,43553
+2021-07-29,Doris,Johnson,small-ticket,Repeat return custom,29815
+2022-11-14,Marie,Rickard,small-ticket,,54849
+2022-10-29,Lance,Mattox,big-ticket,Repeat return custom,80535
+2023-02-20,Luis,Callis,big-ticket,Repeat return custom,59786
+2021-08-17,Donovan,Landry,small-ticket,Repeat return custom,36706
+2022-03-12,Clemencia,Opatz,big-ticket,Repeat return custom,53051
+2021-06-26,Richard,Johnson,big-ticket,Repeat return custom,12789
