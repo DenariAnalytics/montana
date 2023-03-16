@@ -1,74 +1,21 @@
-import os
 import pandas as pd
 from denari import NarcoAnalytics as narc, Montana as mn, TaxTools as tax
 import dash
-from dash import html, dcc
 from dash.dependencies import Input, Output
 
-slash = '/'
-path = os.getcwd()
-data_folder = path + slash + "data" + slash
-costs = pd.read_csv(data_folder + "spending.csv", infer_datetime_format=True)
-pack = pd.read_csv(data_folder + "packages.csv", infer_datetime_format=True)
-clients = pd.read_csv(data_folder + "clients.csv", infer_datetime_format=True)
-sales = pd.read_csv(data_folder + "calex.csv", infer_datetime_format=True)
-x = [costs,pack,sales]
-for i in x:
-    narc.set_dates(i)
+import tabs
+from data_wrangling import wrangled
 
-s = sales.copy()
-c = costs.copy()
-
-s = narc.fill_dates(s)
-c = narc.fill_dates(c)
-
-c = narc.split_dates(c,format='period')
-s = narc.split_dates(s,format='period')
-
-from title import title_layout
-from time_dropdowns import dropdowns
-from revenue_analysis import revenue_layout
-from profit import profit_layout
-from cost import cost_layout
-from cash_cumulate import cumulation_layout
-from demographics import demo_layout
+data = wrangled.get_data('PT Fake 1')
+s = data['sales']
+c = data['costs']
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True,
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}])
 
-
-app.layout = html.Div(children=[html.Div(title_layout),
-                                html.Div(dropdowns, {'position': 'fixed', 'top': '0'}),
-                                dcc.Tabs(id='tabs', value='tab-1', children=[
-                                    dcc.Tab(label='Revenue', value='tab-1', children=[
-                                        html.Div(revenue_layout)
-                                    ]),
-                                    dcc.Tab(label='Costs', value='tab-2', children=[
-                                        html.Div(cost_layout)
-                                    ]),
-                                    dcc.Tab(label='Profit', value='tab-3', children=[
-                                        html.Div(profit_layout)
-                                    ]),
-                                    dcc.Tab(label='Cash Cumulation', value='tab-4', children=[
-                                        html.Div(cumulation_layout)
-                                    ]),
-                                    dcc.Tab(label='Year Comparison', value='tab-5', children=[
-                                        html.Div(html.H1('COMING SOON', style={'text-align': 'center', 'margin-top': '30vh', 'font-size': '5em'}))
-                                    ]),
-                                    dcc.Tab(label='Tax Analysis', value='tab-6', children=[
-                                        html.Div(html.H1('COMING SOON', style={'text-align': 'center', 'margin-top': '30vh', 'font-size': '5em'}))
-                                    ]),
-                                    dcc.Tab(label='Customer Analysis', value='tab-7', children=[
-                                        html.Div(html.H1('COMING SOON', style={'text-align': 'center', 'margin-top': '30vh', 'font-size': '5em'}))
-                                    ]),
-                                    dcc.Tab(label='Demographics', value='tab-8', children=[
-                                        html.Div(html.H1('COMING SOON', style={'text-align': 'center', 'margin-top': '30vh', 'font-size': '5em'}))
-                                    ]),
-                                ]),
-                               ])
+app.layout = tabs.tab_layout
                                
-
 @app.callback(Output('sub-dropdown-1', 'options'), [Input('dropdown-1', 'value')])
 def sub_dropdown_1(main_dropdown_value):
     options = mn.input_dropdown_column_set(s,main_dropdown_value)
