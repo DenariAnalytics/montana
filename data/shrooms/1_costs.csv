@@ -1,0 +1,81 @@
+date,product,type,quantity,shop,cost,shipping,tier,growth,purchase code,waste
+23/02/2021,100 Nitrile Gloves,Processing,1,Amazon,17.99,0,2,,#01,TRUE
+24/02/2021,4 Storage Canisters,Storage,2,Amazon,5,0,1,,#02,TRUE
+25/02/2021,3 Pasta Jars,Storage,1,Amazon,13.99,0,1,,#03,TRUE
+09/03/2021,Silica Gel,Packaging,1,Amazon,3.95,0,2,,#04,
+10/03/2021,Labels,Packaging,1,Amazon,13.99,0,2,,#05,
+13/03/2021,100 Nitrile Gloves,Processing,1,Amazon,19.99,0,2,,#06,
+13/03/2021,4 Chambers,Processing,1,Amazon,21,0,1,,#07,
+13/03/2021,1 Chamber,Processing,1,Amazon,5.25,0,1,,#07,
+24/03/2021,Dehydrator,Processing,1,Amazon,37.99,0,1,,#08,TRUE
+18/06/2021,1.6g AA,Product,1.6,R,22.85,0,2,,#09,
+05/07/2021,CG,Raw,1,Viking,11.99,5.99,3,#2,#10,
+12/07/2021,Grain,Raw,1,Viking,35.97,1.99,3,#1,#08,
+12/07/2021,Grain,Raw,1,Viking,35.97,1.99,3,,#08,TRUE
+12/07/2021,Grain,Raw,1,Viking,35.97,1.99,3,#2,#08,
+27/07/2021,AA,Raw,1,Viking,14.99,5.99,3,#1,#09,
+06/09/2021,Coco Verm,Raw,1,Williams,23.49,1.99,3,#2,#10,
+09/09/2021,Coco Verm,Raw,1,Williams,23.49,1.99,3,#1,#11,
+24/09/2021,Isopropyl 475ml,Processing,1,Amazon,7.8,0,2,,#12,
+03/10/2021,30 boxes,Packaging,1,Amazon,10.19,0,2,,#13,
+06/10/2021,Tape,Packaging,1,Amazon,8.99,0,2,,#14,
+29/11/2021,Dehydrator Homcom,Processing,1,Amazon,42.99,0,1,,#15,
+29/11/2021,Isopropyl 475ml,Processing,1,Amazon,6.52,0,2,,#16,
+29/11/2021,100 Nitrile Gloves,Processing,1,Amazon,14.99,0,2,,#17,
+30/11/2021,Grain 1kg,Raw,8,Williams,91.92,1.99,3,,#18,TRUE
+30/11/2021,Grain 1kg,Raw,8,Williams,68.94,1.49,3,,#19,TRUE
+30/11/2021,Grain 1kg,Raw,1,Williams,11.49,0.25,3,#6,#19,
+30/11/2021,Grain 1kg,Raw,1,Williams,11.49,0.25,3,#7,#19,
+06/12/2021,Silica Gel,Packaging,1,Amazon,3.95,0,2,,#20,
+11/12/2021,Boxes,Packaging,1,Amazon,9.99,0,2,,#21,
+17/12/2021,Syringes,Processing,1,Amazon,12.99,0,2,,#22,
+02/01/2022,60 x Boxes (PandaHall),Packaging,1,Amazon,15.59,0,2,,#23,
+07/01/2022,1HN,Raw,1,Martian G,12.95,1.19,3,,#24,
+07/01/2022,1MZ,Raw,1,Martian G,12.95,1.18,3,"#6,#7",#24,
+07/01/2022,1AA,Raw,1,Martian G,12.95,1.18,3,,#24,
+07/01/2022,1ST,Raw,1,Martian G,12.95,1.18,3,,#24,
+18/01/2022,Grain 1kg,Raw,12,Williams,154.86,1.99,3,,#25,TRUE
+18/01/2022,Tape,Processing,1,Williams,2.99,0,2,,#26,
+25/01/2022,1HN,Raw,1,Martian G,12.95,1.59,3,,#27,TRUE
+25/01/2022,1IST,Raw,1,Martian G,12.95,1.58,3,,#28,TRUE
+25/01/2022,1MZ,Raw,1,Martian G,12.95,1.58,3,,#29,
+10/02/2022,MushBox Grow Kit,Raw,2,Martian M,36.95,4.75,3,#3,#30,
+10/02/2022,1GT,Raw,1,Martian G,12.95,2.38,3,,#31,
+10/02/2022,1ST,Raw,1,Martian G,12.95,2.37,3,,#31,TRUE
+19/02/2022,2GT4RW,Raw,1,Martian G,97.7,4.75,3,,#32,
+19/02/2022,MushBox Grow Kit,Raw,4,Martian M,24.64,3.17,3,,#33,
+19/02/2022,MushBox Grow Kit,Raw,1,Martian M,6.16,0.79,3,,#33,TRUE
+19/02/2022,MushBox Grow Kit,Raw,1,Martian M,6.16,0.79,3,#8,#33,
+03/03/2022,Grain 1.5kg,Raw,3,eBay,13.75,1.2,1,,#34,TRUE
+03/03/2022,Grain 1.5kg,Raw,3,eBay,13.75,1.2,1,#4,#34,
+03/03/2022,Grain 1.5kg,Raw,3,eBay,13.75,1.2,1,#5,#34,
+27/03/2022,Coco Coir,Raw,1,eBay,16.99,0,3,#4,#35,
+28/03/2022,Coco Coir,Raw,1,eBay,16.99,0,3,#5,#35,
+08/05/2022,50 Ziplock Bags (28x27.5),Storage,1,Amazon,10.99,0,2,,#36,
+10/05/2022,Isopropyl 475ml,Processing,1,Amazon,11.45,0,2,,#37,
+10/05/2022,100 Ziplock Bags (10x15),Packaging,1,Amazon,11.99,0,2,,#38,
+12/05/2022,Coco Coir (1.7kg),Raw,1,Williams,23.49,1.5,3,,#39,TRUE
+25/05/2022,Coco Coir (1.7kg),Raw,1,Williams,23.49,0,3,#6,#40,
+25/05/2022,Coco Coir (1.7kg),Raw,1,Williams,23.49,0,3,#7,#40,
+25/05/2022,Coco Coir (1.7kg),Raw,1,Williams,23.49,0,3,#8,#40,
+25/05/2022,Coco Coir (1.7kg),Raw,1,Williams,23.49,0,3,#9,#40,
+15/06/2022,100 Nitrile Gloves,Processing,1,Amazon,9.35,0,2,,#41,
+28/06/2022,Isopropyl 475ml,Processing,1,Amazon,11.45,0,2,,#42,
+28/06/2022,PVC Tape,Processing,1,Amazon,5.99,0,2,,#43,
+02/06/2022,30 10g Silica Gel,Processing,1,Amazon,12.99,0,2,,#44,
+25/07/2022,Coco Coir (1.7kg),Raw,1,Williams,23.49,0,3,#10,#45,
+25/07/2022,Coco Coir (1.7kg),Raw,1,Williams,23.49,0,3,#11,#45,TRUE
+25/07/2022,Coco Coir (1.7kg),Raw,1,Williams,23.49,0,3,#12,#45,TRUE
+26/09/2022,1.25kg Millet Grain,Raw,6,Williams,83.94,0,3,,#46,
+26/09/2022,1.25kg Millet Grain,Raw,1,Williams,13.99,0,3,,#46,TRUE
+19/10/2022,30 10g Silica Gel,Processing,1,Amazon,11.99,0,2,,#47,
+19/10/2022,100 Ziplock Bags (10x15),Packaging,1,Amazon,5.99,0,2,,#48,
+08/02/2023,Distilled Water,Processing,1,Amazon,8.65,0,2,,#49,
+08/03/2023,60 boxes,Packaging,1,Amazon,11.45,0,2,,#49,
+06/03/2023,Distilled Water,Processing,1,Amazon,8.65,0,2,,#50,
+09/03/2023,Distilled Water,Processing,1,Amazon,8.65,0,2,,#51,
+20/01/2023,Isopropyl 475ml,Processing,1,Amazon,11.45,0,2,,#52,
+21/02/2023,Spray Botttle,Processing,1,Amazon,11.45,0,3,,#53,
+20/01/2023,1.25kg Millet Grain,Raw,7,Williams,13.99,0,1,,#55,
+23/01/2023,Coco Coir,Raw,,Williams,24.99,0,1,#13,#56,
+23/01/2023,Substr8,Raw,,Williams,39.99,0,1,#14,#56,

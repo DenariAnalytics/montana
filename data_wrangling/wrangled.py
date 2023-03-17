@@ -6,7 +6,7 @@ def get_data(company):
 
     company_log = {
         'PT Fake 1': path + '/wranglers/PT SalesFakeData_1',
-        'shroom': path + '/wranglers/shroom',
+        'shrooms': path + '/wranglers/shroom',
     }
 
     data_path = os.path.join(path, company_log[company])

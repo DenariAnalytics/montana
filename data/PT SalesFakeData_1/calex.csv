@@ -1,4 +1,4 @@
-date,surname,name,package,payment,payment type
+date,surname,name,product,payment,payment type
 04/01/2022,A,S,single,60,cash
 04/01/2022,N,S,five,287.5,bank
 04/01/2022,B,D,twenty,900,bank

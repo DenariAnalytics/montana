@@ -3,10 +3,10 @@ from denari import NarcoAnalytics as narc, Montana as mn, TaxTools as tax
 import dash
 from dash.dependencies import Input, Output
 
-import tabs
+import index
 from data_wrangling import wrangled
 
-data = wrangled.get_data('PT Fake 1')
+data = wrangled.get_data('shrooms')
 s = data['sales']
 c = data['costs']
 
@@ -14,7 +14,7 @@ app = dash.Dash(__name__, suppress_callback_exceptions=True,
                 meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}])
 
-app.layout = tabs.tab_layout
+app.layout = index.tab_layout
                                
 @app.callback(Output('sub-dropdown-1', 'options'), [Input('dropdown-1', 'value')])
 def sub_dropdown_1(main_dropdown_value):
@@ -38,21 +38,24 @@ def sub_dropdown_2(main_dropdown_value):
 
 def revenue(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     color = 'one'
-    dff = s.copy()
-    dff = dff.fillna(0)
+    sales = s.copy()
+    sales = sales.fillna(0)
     
-    cat = 'package'
-    order_ls = narc.column_set(dff,cat,'payment')
-    order_lspt = narc.column_set(dff,'payment type','payment')
+    cat = 'product'
+    order_ls = narc.column_set(sales,cat,'payment')
+    order_lspt = narc.column_set(sales,'payment type','payment')
+
+    ### sales = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
 
     if main_dropdown_value != 'alltime':
-        dff = dff[dff[main_dropdown_value] == sub_dropdown_1]
+        sales = sales[sales[main_dropdown_value] == sub_dropdown_1]
     else:
-        dff = dff
+        sales = sales
 
-    pack_sales = narc.aggregate_category(dff,sub_dropdown_2,cat,'payment',order_ls)
+
+    pack_sales = narc.aggregate_category(sales,sub_dropdown_2,cat,'payment',order_ls)
     pack_sales = pack_sales.drop(0, axis=1)
-    cash_card = narc.aggregate_category(dff,sub_dropdown_2,'payment type','payment',order_lspt)
+    cash_card = narc.aggregate_category(sales,sub_dropdown_2,'payment type','payment',order_lspt)
     cash_card = cash_card.drop(0, axis=1)
 
     mc = narc.metric_columns(pack_sales,'sum')
@@ -81,6 +84,7 @@ def costs(main_dropdown_value, sub_dropdown_1, sub_dropdown_2, bar_mode, cat):
 
     order_ls = narc.column_set(dff,cat,'cost')
 
+    ### dff = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
     if main_dropdown_value != 'alltime':
         dff = dff[dff[main_dropdown_value] == sub_dropdown_1]
     else:
@@ -111,6 +115,8 @@ def rev_exp_prof(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     sales = s.copy()
     costs = c.copy()
     
+    ### sales = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
+    ### costs = mn.filter_by_date(costs,main_dropdown_value,sub_dropdown_1)
 
     if main_dropdown_value != 'alltime':
         sales = sales[sales[main_dropdown_value] == sub_dropdown_1]
@@ -150,6 +156,9 @@ def cash_cumulate(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     
     sales = s.copy()
     costs = c.copy()
+
+    ### sales = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
+    ### costs = mn.filter_by_date(costs,main_dropdown_value,sub_dropdown_1)
     
     if main_dropdown_value != 'alltime':
         sales = sales[sales[main_dropdown_value] == sub_dropdown_1]
@@ -189,6 +198,8 @@ def cash_cumulate(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
 def demographics(main_dropdown_value,sub_dropdown_1,bar_mode,demographic):
     color = 'one'
     dem = sales.copy()
+
+    ### dem = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
     
     if main_dropdown_value != 'alltime':
         dem = dem[dem[main_dropdown_value] == sub_dropdown_1]
@@ -200,7 +211,7 @@ def demographics(main_dropdown_value,sub_dropdown_1,bar_mode,demographic):
     labels = ['20-25', '26-30', '31-35', '36-40', '41-45', '46-50', '51-55']
     dem['age range'] = pd.cut(dem['age'], bins=bins, labels=labels)
     pack_order = ['single','five','eight','ten','twelve','twenty']
-    cat_package = pd.Categorical(pack['package'], categories=pack_order, ordered=True)
+    cat_product = pd.Categorical(pack['product'], categories=pack_order, ordered=True)
     cat = 'gender'
     ls = narc.column_set(dem,cat,'payment')
     raw = narc.aggregate_category(dem,demographic,cat,'payment',ls,metric='sum')
