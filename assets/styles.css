@@ -1,0 +1,31 @@
+.sidebar {
+    background-color: #85bbf2;
+    height: 100%;
+}
+
+.main-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.dropdowns-container {
+    position: fixed;
+    top: 0;
+    left: 16.66667%;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.row-centered {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .dropdowns-container {
+        left: 0;
+    }
+}

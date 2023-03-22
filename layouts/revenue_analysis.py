@@ -15,4 +15,3 @@ revenue_layout = html.Div(
                                   dcc.Graph(id='pay-tot'),], style={'flex': '1'}),], style={'display': 'flex', 'justifyContent': 'center', 'alignItems': 'center', 'width': '100%'}),],
                       style={'display': 'flex', 'flexDirection': 'column', 'justifyContent': 'center', 'alignItems': 'center'}
                       )
-
