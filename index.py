@@ -9,6 +9,7 @@ from layouts.revenue_analysis import revenue_layout
 from layouts.profit import profit_layout
 from layouts.cost import cost_layout
 from layouts.cash_cumulate import cumulation_layout
+from layouts.tax import tax_layout
 from layouts.demographics import demo_layout
 
 from app import app
@@ -80,10 +81,9 @@ def render_content(tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8):
     elif tab_id == "tab-5":
         return html.H1('COMING SOON', style={'text-align': 'center', 'margin-top': '30vh', 'font-size': '5em'})
     elif tab_id == "tab-6":
-        return html.H1('COMING SOON', style={'text-align': 'center', 'margin-top': '30vh', 'font-size': '5em'})
+        return tax_layout
     elif tab_id == "tab-7":
         return html.H1('COMING SOON', style={'text-align': 'center', 'margin-top': '30vh', 'font-size': '5em'})
     elif tab_id == "tab-8":
         return html.H1('COMING SOON', style={'text-align': 'center', 'margin-top': '30vh', 'font-size': '5em'})
-    
 

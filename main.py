@@ -1,6 +1,10 @@
 import pandas as pd
-from denari import NarcoAnalytics as narc, Montana as mn, TaxTools as tax
+from denari import NarcoAnalytics as narc, TaxTools as tax
+from montana import montana as mn
 from dash.dependencies import Input, Output
+from dash import html
+import dash_bootstrap_components as dbc
+import plotly.graph_objects as go
 
 import index
 from data_wrangling import wrangled
@@ -36,18 +40,12 @@ def revenue(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     color = 'one'
     sales = s.copy()
     sales = sales.fillna(0)
-    
+
     cat = 'product'
     order_ls = narc.column_set(sales,cat,'payment')
     order_lspt = narc.column_set(sales,'payment type','payment')
 
-    ### sales = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
-
-    if main_dropdown_value != 'alltime':
-        sales = sales[sales[main_dropdown_value] == sub_dropdown_1]
-    else:
-        sales = sales
-
+    sales = mn.filter_time_period(sales,main_dropdown_value,sub_dropdown_1)
 
     pack_sales = narc.aggregate_category(sales,sub_dropdown_2,cat,'payment',order_ls)
     pack_sales = pack_sales.drop(0, axis=1)
@@ -80,11 +78,7 @@ def costs(main_dropdown_value, sub_dropdown_1, sub_dropdown_2, bar_mode, cat):
 
     order_ls = narc.column_set(dff,cat,'cost')
 
-    ### dff = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
-    if main_dropdown_value != 'alltime':
-        dff = dff[dff[main_dropdown_value] == sub_dropdown_1]
-    else:
-        dff = dff
+    dff = mn.filter_time_period(dff,main_dropdown_value,sub_dropdown_1)
 
     agg_costs = narc.aggregate_category(dff,sub_dropdown_2,cat,'cost',order_ls)
     agg_costs = agg_costs.drop(0, axis=1)
@@ -111,15 +105,8 @@ def rev_exp_prof(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     sales = s.copy()
     costs = c.copy()
     
-    ### sales = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
-    ### costs = mn.filter_by_date(costs,main_dropdown_value,sub_dropdown_1)
-
-    if main_dropdown_value != 'alltime':
-        sales = sales[sales[main_dropdown_value] == sub_dropdown_1]
-        costs = costs[costs[main_dropdown_value] == sub_dropdown_1]
-    else:
-        sales = sales
-        costs = costs
+    sales = mn.filter_time_period(sales,main_dropdown_value,sub_dropdown_1)
+    costs = mn.filter_time_period(costs,main_dropdown_value,sub_dropdown_1)
     
     sales = sales.groupby(s['date'])['payment'].sum().reset_index()
     sales = sales.rename(columns={'payment': 'revenue'})
@@ -153,15 +140,8 @@ def cash_cumulate(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     sales = s.copy()
     costs = c.copy()
 
-    ### sales = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
-    ### costs = mn.filter_by_date(costs,main_dropdown_value,sub_dropdown_1)
-    
-    if main_dropdown_value != 'alltime':
-        sales = sales[sales[main_dropdown_value] == sub_dropdown_1]
-        costs = costs[costs[main_dropdown_value] == sub_dropdown_1]
-    else:
-        sales = sales
-        costs = costs
+    sales = mn.filter_time_period(sales,main_dropdown_value,sub_dropdown_1)
+    costs = mn.filter_time_period(costs,main_dropdown_value,sub_dropdown_1)
     
     sales = sales.groupby(s['date'])['payment'].sum().reset_index()
     sales = sales.rename(columns={'payment': 'revenue'})
@@ -185,6 +165,74 @@ def cash_cumulate(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     
     return [a]
 
+@app.callback(
+    Output("result_output", "children"),
+    [Input("submit_button", "n_clicks"),
+     Input("text_input", "value"),
+     Input("salary_input", "value"),
+     Input("tax_year_dropdown", "value"),],
+    prevent_initial_call=True,
+)
+def calculate_tax(n_clicks, tc, sal, ty):
+    if n_clicks and tc and sal and ty:
+        t = 40000
+        e = 3000
+        result = tax.ltd_full_take(t, sal, e, ty, tc)
+        # Extract the column names from the first dictionary in the result list
+        column_names = result.columns.to_list()
+        # Create a header row for the table
+        result_dict = result.to_dict(orient='records')
+        header = [html.Th(col_name) for col_name in column_names]
+        rows = [
+            html.Tr([
+            html.Td(round(row[col_name], 2) if isinstance(row[col_name], (int, float)) else row[col_name])
+            for col_name in column_names
+            ])
+            for row in result_dict
+            ]
+        # Combine header and rows to create the table body
+        table_body = [html.Thead(header), html.Tbody(rows)]
+        # Return the table as a dbc.Table component
+        test_table = dbc.Table(table_body, bordered=True, striped=True, hover=True, responsive=True)
+        return test_table
+    return ""
+
+@app.callback(
+    Output("iteration_graph", "figure"),
+    [Input("optimize_button", "n_clicks"),
+     Input("text_input", "value"),
+     Input("salary_input", "value"),
+     Input("tax_year_dropdown", "value"),],
+    prevent_initial_call=True,
+)
+def tax_graph(n_clicks, tc, sal, ty):
+    if n_clicks and tc and sal and ty:
+        print("opt")
+        t = 40000
+        e = 3000
+        #tax graph
+        tax_iterations = tax.iterate_lite_full_take(t,e,ty,tc,optimal=False)
+
+        columns_to_plot = ['Gross Take', 'Total Takehome']
+        colors = ['blue', 'red', 'green']
+        yaxis2_columns = ['Percentage Take']
+        fig = go.Figure()
+        # Add traces for the first y-axis
+        for i, column in enumerate(columns_to_plot):
+            fig.add_trace(go.Scatter(x=tax_iterations['Salary'], y=tax_iterations[column], mode='lines', name=column, line=dict(color=colors[i]), yaxis='y1'))
+        # Add traces for the second y-axis
+        for column in yaxis2_columns:
+            fig.add_trace(go.Scatter(x=tax_iterations['Salary'], y=tax_iterations[column], mode='lines', name=column, yaxis='y2'))
+        # Customize the layout
+        fig.update_layout(title='Multiple Line Plot',
+                        xaxis_title='Salary',
+                        yaxis_title='Values',
+                        yaxis=dict(title='Y-axis 1'),
+                        yaxis2=dict(title='Y-axis 2', overlaying='y', side='right'))
+        #Plot Optimal Taxation
+        return fig
+    return ""
+
 @app.callback([Output(component_id='demographics', component_property='figure'),],
               [Input(component_id='dropdown-1', component_property='value'),
                Input(component_id='sub-dropdown-1', component_property='value'),
@@ -195,12 +243,7 @@ def demographics(main_dropdown_value,sub_dropdown_1,bar_mode,demographic):
     color = 'one'
     dem = sales.copy()
 
-    ### dem = mn.filter_by_date(sales,main_dropdown_value,sub_dropdown_1)
-    
-    if main_dropdown_value != 'alltime':
-        dem = dem[dem[main_dropdown_value] == sub_dropdown_1]
-    else:
-        dem = dem
+    dem = mn.filter_time_period(sales,main_dropdown_value,sub_dropdown_1)
 
     dem = dem.merge(clients, on=['surname', 'name'], how='left')
     bins = [20, 25, 30, 35, 40, 45, 50, 55]
