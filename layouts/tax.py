@@ -15,7 +15,7 @@ tax_year_dropdown = dbc.Select(
 text_input_group = dbc.InputGroup(
     [
         dbc.InputGroupText("Tax Code"),
-        dbc.Input(id="text_input", type="text", placeholder="Enter text", value= '1257A'),
+        dbc.Input(id="text_input", type="text", placeholder="Enter text", value='1257A'),
     ]
 )
 
@@ -41,18 +41,42 @@ tax_layout = html.Div([
     html.P('"The tax man is a bully" - Robert Kiyosaki', style={'textAlign': 'center', 'color': '#503D36'}),
     # Combine the components in a row
     dbc.Row(
-    [
-        dbc.Col(text_input_group, width=4),
-        dbc.Col(salary_input_group, width=4),
-        dbc.Col(tax_year_input_group, width=4),
-    ],
-    justify="center",
+        [
+            dbc.Col(text_input_group, width=4),
+            dbc.Col(salary_input_group, width=4),
+            dbc.Col(tax_year_input_group, width=4),
+        ],
+        justify="center",
     ),
-    #Calculate Button
-    dbc.Button("Calculate", id="submit_button", color="primary"),
-    #Output
+    # Calculate Button
+    html.Div(
+        dbc.Button("Calculate", id="submit_button", color="primary"),
+        style={
+            'display': 'flex',
+            'justify-content': 'center',
+            'padding': '10px'
+        }),
+    # Output
     html.Div(id="result_output"),
-    #Optimize Button
-    dbc.Button("Optimize", id="optimize_button", color="primary"),
-    dcc.Graph(id='iteration_graph', style={'width': '50%', 'display': 'inline-block'})
-    ])
+    # Optimize Button
+    html.Div(
+        dbc.Button("Optimize", id="optimize_button", color="primary"),
+        style={
+            'display': 'flex',
+            'justify-content': 'center',
+            'padding': '10px'
+        }),
+
+    dcc.Graph(id='iteration_graph', style={'width': '100%', 'display': 'inline-block'})
+])
+
+# Create tabs using dbc.Tabs and dbc.Tab components
+tax_tab_layout = dbc.Tabs(
+    [
+        dbc.Tab(label="Current/Future Planning", tab_id="current_future_planning_tab", children=html.Div()),
+        dbc.Tab(label="Previous Years", tab_id="previous_years_tab", children=tax_layout)
+    ]
+)
+
+
+   

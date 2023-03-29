@@ -1,10 +1,11 @@
 import pandas as pd
 from denari import NarcoAnalytics as narc, TaxTools as tax
 from montana import montana as mn
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 from dash import html
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
+import dash
 
 import index
 from data_wrangling import wrangled
@@ -166,72 +167,66 @@ def cash_cumulate(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     return [a]
 
 @app.callback(
-    Output("result_output", "children"),
+    [Output("result_output", "children"),
+     Output("iteration_graph", "figure")],
     [Input("submit_button", "n_clicks"),
-     Input("text_input", "value"),
-     Input("salary_input", "value"),
-     Input("tax_year_dropdown", "value"),],
+     Input("optimize_button", "n_clicks")],
+    [State("text_input", "value"),
+     State("salary_input", "value"),
+     State("tax_year_dropdown", "value"),
+     State("result_output", "children"),
+     State("iteration_graph", "figure")],
     prevent_initial_call=True,
 )
-def calculate_tax(n_clicks, tc, sal, ty):
-    if n_clicks and tc and sal and ty:
-        t = 40000
-        e = 3000
+def calculate_tax_and_graph(submit_n_clicks, optimize_n_clicks, tc, sal, ty, stored_result_output, stored_iteration_graph):
+    t = 40000
+    e = 3000
+    
+    ctx = dash.callback_context
+
+    if not ctx.triggered:
+        return "", {}
+    else:
+        button_id = ctx.triggered[0]['prop_id'].split('.')[0]
+
+    if button_id == "submit_button" and tc and sal and ty:
         result = tax.ltd_full_take(t, sal, e, ty, tc)
-        # Extract the column names from the first dictionary in the result list
         column_names = result.columns.to_list()
-        # Create a header row for the table
         result_dict = result.to_dict(orient='records')
         header = [html.Th(col_name) for col_name in column_names]
         rows = [
             html.Tr([
-            html.Td(round(row[col_name], 2) if isinstance(row[col_name], (int, float)) else row[col_name])
-            for col_name in column_names
+                html.Td(round(row[col_name], 2) if isinstance(row[col_name], (int, float)) else row[col_name])
+                for col_name in column_names
             ])
             for row in result_dict
-            ]
-        # Combine header and rows to create the table body
+        ]
         table_body = [html.Thead(header), html.Tbody(rows)]
-        # Return the table as a dbc.Table component
         test_table = dbc.Table(table_body, bordered=True, striped=True, hover=True, responsive=True)
-        return test_table
-    return ""
-
-@app.callback(
-    Output("iteration_graph", "figure"),
-    [Input("optimize_button", "n_clicks"),
-     Input("text_input", "value"),
-     Input("salary_input", "value"),
-     Input("tax_year_dropdown", "value"),],
-    prevent_initial_call=True,
-)
-def tax_graph(n_clicks, tc, sal, ty):
-    if n_clicks and tc and sal and ty:
+        return test_table, {}
+    
+    if button_id == "optimize_button" and tc and sal and ty:
         print("opt")
-        t = 40000
-        e = 3000
-        #tax graph
-        tax_iterations = tax.iterate_lite_full_take(t,e,ty,tc,optimal=False)
-
+        tax_iterations = tax.iterate_lite_full_take(t, e, ty, tc, optimal=False)
         columns_to_plot = ['Gross Take', 'Total Takehome']
-        colors = ['blue', 'red', 'green']
+        colors = narc.color_list(columns_to_plot,'one')
         yaxis2_columns = ['Percentage Take']
         fig = go.Figure()
-        # Add traces for the first y-axis
         for i, column in enumerate(columns_to_plot):
             fig.add_trace(go.Scatter(x=tax_iterations['Salary'], y=tax_iterations[column], mode='lines', name=column, line=dict(color=colors[i]), yaxis='y1'))
-        # Add traces for the second y-axis
         for column in yaxis2_columns:
             fig.add_trace(go.Scatter(x=tax_iterations['Salary'], y=tax_iterations[column], mode='lines', name=column, yaxis='y2'))
-        # Customize the layout
-        fig.update_layout(title='Multiple Line Plot',
-                        xaxis_title='Salary',
-                        yaxis_title='Values',
-                        yaxis=dict(title='Y-axis 1'),
-                        yaxis2=dict(title='Y-axis 2', overlaying='y', side='right'))
-        #Plot Optimal Taxation
-        return fig
-    return ""
+        fig.update_layout(title='Tax Optimization',
+                          xaxis_title='Salary',
+                          yaxis_title='Values',
+                          yaxis=dict(title='£'),
+                          yaxis2=dict(title='%', overlaying='y', side='right')
+                          )
+        return {}, fig
+
+    return "", {}
+
+
 
 @app.callback([Output(component_id='demographics', component_property='figure'),],
               [Input(component_id='dropdown-1', component_property='value'),
@@ -241,7 +236,7 @@ def tax_graph(n_clicks, tc, sal, ty):
                                  
 def demographics(main_dropdown_value,sub_dropdown_1,bar_mode,demographic):
     color = 'one'
-    dem = sales.copy()
+    sales = s.copy()
 
     dem = mn.filter_time_period(sales,main_dropdown_value,sub_dropdown_1)
 
