@@ -11,6 +11,8 @@ import index
 from data_wrangling import wrangled
 from app import app
 
+color = 'one'
+
 data = wrangled.get_data('PT Fake 1')
 s = data['sales']
 c = data['costs']
@@ -38,30 +40,35 @@ def sub_dropdown_2(main_dropdown_value):
               ])
 
 def revenue(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
-    color = 'one'
     sales = s.copy()
     sales = sales.fillna(0)
-
-    cat = 'product'
-    order_ls = narc.column_set(sales,cat,'payment')
-    order_lspt = narc.column_set(sales,'payment type','payment')
+    category = 'product'
 
     sales = mn.filter_time_period(sales,main_dropdown_value,sub_dropdown_1)
 
-    pack_sales = narc.aggregate_category(sales,sub_dropdown_2,cat,'payment',order_ls)
-    pack_sales = pack_sales.drop(0, axis=1)
-    cash_card = narc.aggregate_category(sales,sub_dropdown_2,'payment type','payment',order_lspt)
+    #Create grouped package graph
+    package_order = narc.column_set(sales,category,'payment')
+    package_sales = narc.aggregate_category(sales.copy(),sub_dropdown_2,category,'payment',package_order)
+    package_sales = package_sales.drop(0, axis=1)
+    package_graph = narc.graph_index_columns(package_sales,colors=color,barmode=bar_mode)
+
+    #Create grouped payment type graph
+    payment_type_list = narc.column_set(sales,'payment type','payment')
+    cash_card = narc.aggregate_category(sales,sub_dropdown_2,'payment type','payment',payment_type_list)
     cash_card = cash_card.drop(0, axis=1)
+    cash_card_graph = narc.graph_index_columns(cash_card,colors=color,barmode=bar_mode)
 
-    mc = narc.metric_columns(pack_sales,'sum')
-    ccmc = narc.metric_columns(cash_card,'sum')
+    #Graph total package sales this period
+    package_totals = narc.metric_columns(package_sales,'sum')
+    package_totals_graph = narc.graph_metrics(package_totals)
 
-    a = narc.graph_index_columns(pack_sales,colors=color,barmode=bar_mode)
-    b = narc.graph_index_columns(cash_card,colors=color,barmode=bar_mode)
-    c = narc.graph_metrics(mc)
-    d = narc.graph_metrics(ccmc)
+    #Grpah total payment type this period
+    cash_card_totals = narc.metric_columns(cash_card,'sum')
+    cash_card_totals_graph = narc.graph_metrics(cash_card_totals)
+
+    package_totals_graph
     
-    return [a,b,c,d]
+    return [package_graph,cash_card_graph,package_totals_graph,cash_card_totals_graph]
 
 @app.callback([Output(component_id='costs', component_property='figure'),
                Output(component_id='cost-totals', component_property='figure')],
