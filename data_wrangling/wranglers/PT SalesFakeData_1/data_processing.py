@@ -12,16 +12,16 @@ def process():
     sales = pd.read_csv(data_folder + "/calex.csv", infer_datetime_format=True)
     x = [costs,pack,sales]
     for i in x:
-        narc.set_dates(i)
+        narc.dates_set_column(i)
 
     s = sales.copy()
     c = costs.copy()
 
-    s = narc.fill_dates(s)
-    c = narc.fill_dates(c)
+    s = narc.dates_fill_gaps(s)
+    c = narc.dates_fill_gaps(c)
 
-    c = narc.split_dates(c,format='period')
-    s = narc.split_dates(s,format='period')
+    c = narc.dates_split(c,format='period')
+    s = narc.dates_split(s,format='period')
 
     processed_data = {'sales': s,
                       'costs': c,
