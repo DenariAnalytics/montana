@@ -65,8 +65,6 @@ def revenue(main_dropdown_value,sub_dropdown_1,sub_dropdown_2,bar_mode):
     #Grpah total payment type this period
     cash_card_totals = narc.metric_columns(cash_card,'sum')
     cash_card_totals_graph = narc.graph_metrics(cash_card_totals)
-
-    package_totals_graph
     
     return [package_graph,cash_card_graph,package_totals_graph,cash_card_totals_graph]
 
